@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_S3.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+                <Label Text="Universidad Israel" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+            </Frame>
+            <Entry x:Name="txtNota1" Placeholder ="Nota Seguimiento 1" />
+            <Entry x:Name="txtExamen1" Placeholder ="Nota Examen 1" />
+
+            <Entry x:Name="txtNota2" Placeholder ="Nota Seguimiento 2" />
+            <Entry x:Name="txtExamen2" Placeholder ="Nota Examen 2" />
+
+            <Entry x:Name="txtNotaP1" Placeholder ="Promedio Momento Uno" IsReadOnly="True"/>
+            <Entry x:Name="txtNotaP2" Placeholder ="Promedio Momento Dos" IsReadOnly="True"/>
+
+            <Entry x:Name="txtNotaFinal" Placeholder ="Nota Final" IsReadOnly="True"/>
+            <Entry x:Name="txtEstado" Placeholder ="Estado" IsReadOnly="True"/>
+
+            <Button x:Name="btnPromedio" Text="Promedio" Clicked="btnPromedio_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
